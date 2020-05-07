@@ -60,6 +60,7 @@ header .desktop {
 
 .logo-container i {
     margin-right: 0.4rem;
+    font-size: 20px;
 }
 
 nav a + a {
@@ -117,7 +118,30 @@ header .mobile {
     font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 938px) {
+@media only screen and (max-width: 938px) and (min-width: 710px) {
+    html {
+        font-size: 12px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.4rem;
+    }
+
+    header {
+        padding: 1.4rem 2rem;
+    }
+
+    span {
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 2.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 710px) {
     .banner-section {
         flex-direction: column;
     }
