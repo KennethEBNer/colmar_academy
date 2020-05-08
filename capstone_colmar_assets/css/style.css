@@ -75,7 +75,8 @@ header .desktop {
 }
 
 nav a + a {
-    margin-left: 16px;
+    padding-left: 16px;
+    margin: 0;
 }
 
 header .mobile {
