@@ -44,6 +44,15 @@ h4 {
     display: flex;
 }
 
+.text p {
+    font-size: 1rem;
+}
+
+.text a {
+    color: cornflowerblue;
+    font-size: 1rem;
+}
+
 /* Header */
 
 header {
@@ -177,6 +186,10 @@ header .mobile {
 
 /* Information section */
 
+.mobile {
+    display: none;
+}
+
 .information-section .left-container {
     width: 60%;
     margin: 2rem 1.5rem;
@@ -221,10 +234,33 @@ header .mobile {
     margin: 1rem 0;
 }
 
-.text a {
-    color: cornflowerblue;
-}
-
 .right-container .gray {
     background-color:rgb(206, 206, 206);
+}
+
+@media only screen and (max-width: 724px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .left-container {
+        display: none;
+    }
+
+    .flex-content-mobile {
+        display: block;
+        margin: 1rem 1rem;
+    }
+
+    .flex-content-mobile .mobile {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        display: block;
+    }
 }
