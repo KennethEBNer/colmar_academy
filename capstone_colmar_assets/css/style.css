@@ -3,10 +3,10 @@
 
 html {
     font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Helvetica, sans-serif;
 }
 
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -30,6 +30,10 @@ h2 {
     color: hsl(5, 10%, 20%);
 }
 
+h3 {
+    font-size: 2.5rem;
+    color: hsl(5, 10%, 20%);
+}
 h4 {
     font-size: 1.8rem;
     font-weight: normal;
@@ -96,12 +100,16 @@ header .mobile {
 .banner-section img {
     width: 60%;
     height: auto;
-    padding: 2rem 1.5rem;
+    margin: 2rem 1.5rem;
 }
 
 .banner-section .supporting-content {
-    background-color: transparent;
-    width: 30%;
+    padding: 0 1.5rem;
+}
+
+.banner-section .supporting-content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .button {
@@ -118,7 +126,7 @@ header .mobile {
     font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 938px) and (min-width: 710px) {
+@media only screen and (max-width: 938px) and (min-width: 724px) {
     html {
         font-size: 12px;
     }
@@ -141,7 +149,7 @@ header .mobile {
 }
 
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 724px) {
     .banner-section {
         flex-direction: column;
     }
@@ -164,5 +172,59 @@ header .mobile {
 
     .button {
         width: 100%;
+    }
 }
 
+/* Information section */
+
+.information-section .left-container {
+    width: 60%;
+    margin: 2rem 1.5rem;
+}
+
+.left-container img {
+    width: 100%;
+    height: auto;
+}
+
+.left-text {
+    margin: 2rem 0;
+}
+
+.left-text h3 + p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    font-family: "Avenir Next";
+}
+
+.information-section .right-container {
+    flex: 1 1 35%;
+    padding: 2rem 0;
+    border-left: 1px solid gray;
+}
+.right-container .flex-content {
+    padding: 1rem;
+    align-items: center;
+}
+
+.right-container img {
+    width: 40%;
+    height: auto;
+}
+
+.right-container .text {
+    padding: 1rem;
+}
+
+.text h4 + p {
+    margin: 1rem 0;
+}
+
+.text a {
+    color: cornflowerblue;
+}
+
+.right-container .gray {
+    background-color:rgb(206, 206, 206);
+}
