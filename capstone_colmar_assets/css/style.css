@@ -62,19 +62,21 @@ header .desktop {
     justify-content: space-between; /* This is how I seperate the logo and nav sections */
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-container i {
+.desktop i {
     margin-right: 8px;
     font-size: 32px;
 }
 
 nav a + a {
     padding-left: 16px;
-    margin: 0;
+}
+
+.mobile .flex-content {
+    justify-content: space-around;
+}
+
+.mobile i {
+    font-size: 32px;
 }
 
 header .mobile {
@@ -88,15 +90,6 @@ header .mobile {
 
     header .mobile {
         display: block;
-    }
-
-    header .flex-content {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .mobile i {
-        font-size: 32px;
     }
 }
 
@@ -151,11 +144,9 @@ header .mobile {
     .banner-section img {
         width: 100%;
         height: auto;
-        padding: 0;
     }
 
     .banner-section .supporting-content {
-        width: auto;
         margin: 2rem 1rem;
     }
 
@@ -167,16 +158,12 @@ header .mobile {
     .button {
         width: 100%;
     }
-
-    span {
-        font-size: 1.4rem;
-    }
 }
 
 /* Information section */
 
 .mobile {
-    display: none;
+    display: none; /* Remove the images formatted for mobile screen */
 }
 
 .information-section .left-container {
@@ -196,13 +183,14 @@ header .mobile {
 .left-text h3 + p {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-    max-width: 90%;
+    max-width: 94%;
 }
+
 
 .information-section .right-container {
     flex: 1 1 35%;
     padding: 2rem 0;
-    border-left: 1px solid gray;
+    border-left: 2px solid rgb(139, 138, 138);
 }
 .right-container .flex-content {
     padding: 1rem;
@@ -222,7 +210,7 @@ header .mobile {
     margin: 1rem 0;
 }
 
-.right-container .gray {
+.gray {
     background-color:rgb(206, 206, 206);
 }
 
@@ -236,19 +224,15 @@ header .mobile {
         display: none;
     }
 
-    .flex-content-mobile {
+    .content-mobile {
         display: block;
         margin: 1rem 1rem;
     }
 
-    .flex-content-mobile .mobile {
+    .content-mobile .mobile {
         display: block;
-        margin: 0 auto;
         width: 100%;
         height: auto;
     }
-
-    .text {
-        display: block;
-    }
 }
+
