@@ -236,3 +236,49 @@ header .mobile {
     }
 }
 
+/* Courses section */
+
+.courses-section {
+    background-color: rgb(240, 240, 240);
+}
+
+.courses-section h3 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.courses-container {
+    text-align: center;
+    margin: 2rem 4.5rem;
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.course {
+    width: 32%;
+    background-color: white;
+}
+
+.course img {
+    width: 100%;
+}
+
+.course div {
+    text-align: left;
+    padding: 1rem;
+}
+
+.course h4 {
+        margin: 1rem 0;
+}
+
+.course p {
+    margin: 0.5rem 0;
+}
+
