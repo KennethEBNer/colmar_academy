@@ -64,6 +64,10 @@ header .desktop {
     justify-content: space-between; /* This is how I seperate the logo and nav sections */
 }
 
+header .flex-content {
+    align-items: center;
+}
+
 .desktop i {
     margin-right: 8px;
     font-size: 32px;
