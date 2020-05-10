@@ -40,7 +40,7 @@ h3 {
 }
 
 .left-text h3 + p,
-.left-text h4 + p {
+.left-text-thesis p {
     font-family: "Avenir Next";
 }
 
@@ -354,4 +354,24 @@ header .mobile {
 .left-text-thesis {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 724px) {
+
+    .thesis-section .left-container {
+        display: block;
+        width: 100%;
+    }
+
+    .thesis-section .right-container {
+        display: none;
+    }
+
+    .left-text-thesis {
+        display: none;
+    }
+
+    .thesis {
+        margin-top: 2rem;
+    }
 }
