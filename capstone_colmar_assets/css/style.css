@@ -35,10 +35,12 @@ h4 {
 
 h3 {
     font-size: 2.5rem;
+    text-align: center;
     color: hsl(5, 10%, 20%);
 }
 
-.left-text h3 + p {
+.left-text h3 + p,
+.left-text h4 + p {
     font-family: "Avenir Next";
 }
 
@@ -180,6 +182,10 @@ header .mobile {
     margin: 2rem 0;
 }
 
+.left-text h3 {
+    text-align: left;
+}
+
 .left-text h3 + p {
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -255,7 +261,6 @@ header .mobile {
 }
 
 .courses-section-desktop h3 {
-    text-align: center;
     padding-top: 2rem;
 }
 
@@ -311,7 +316,6 @@ header .mobile {
     }
 
     .courses-section-mobile h3 {
-        text-align: center;
         padding-bottom: 1rem;
     }
 
@@ -322,4 +326,32 @@ header .mobile {
         padding-bottom: 1.5rem;
         margin: 0.5rem 1rem;
     }
+}
+
+/* Thesis section */
+
+.thesis-section .left-container {
+    width: 60%;
+    margin: 2rem 1.5rem;
+}
+
+.left-container video {
+    width: 100%;
+    height: auto;
+}
+
+.thesis-section .right-container {
+    flex: 1 1 35%;
+    padding: 2rem 0;
+}
+
+.left-text-thesis p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 94%;
+}
+
+.left-text-thesis {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 }
