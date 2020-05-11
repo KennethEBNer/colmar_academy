@@ -89,7 +89,7 @@ header .mobile {
     display: none;
 }
 
-@media only screen and (max-width: 480px),
+@media only screen and (max-width: 780px),
 (max-device-width: 480px) {
     header .desktop {
         display: none;
@@ -143,13 +143,13 @@ header .mobile {
     }
 }
 
-@media only screen and (max-width:724px) and (min-width: 480px) {
+/*@media only screen and (max-width:724px) and (min-width: 480px) {
     html {
         font-size: 8px;
     }
-}
+}*/
 
-@media only screen and (max-width: 480px),
+@media only screen and (max-width: 780px),
 (max-device-width: 480px) {
     .banner-section {
         flex-direction: column;
@@ -232,7 +232,7 @@ header .mobile {
     background-color:rgb(206, 206, 206);
 }
 
-@media only screen and (max-width: 480px),
+@media only screen and (max-width: 780px),
 (max-device-width: 480px) {
 
     .desktop {
@@ -318,7 +318,7 @@ header .mobile {
     margin: 0.5rem 0;
 }
 
-@media only screen and (max-width: 480px),
+@media only screen and (max-width: 780px),
 (max-device-width: 480px) {
 
     .courses-section-desktop {
@@ -361,21 +361,20 @@ header .mobile {
 
 .left-text-thesis p {
     margin-top: 1.5rem;
-    margin-bottom: 2rem;
     max-width: 94%;
 }
 
 .left-text-thesis {
     margin-top: 1.5rem;
-    margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 480px),
+@media only screen and (max-width: 780px),
 (max-device-width: 480px) {
 
     .thesis-section .left-container {
         display: block;
         width: 100%;
+        margin-bottom: 1.5rem;
     }
 
     .thesis-section .right-container {
@@ -390,3 +389,26 @@ header .mobile {
         margin-top: 2rem;
     }
 }
+
+/* Footer section */
+
+footer {
+    padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+footer p {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.TandP {
+    float: right;
+}
+
+@media only screen and (max-width: 780px),
+(max-device-width: 480px) {
+    .TandP {
+        display: none;
+    }
+}
+
