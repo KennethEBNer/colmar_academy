@@ -52,6 +52,19 @@ h3 {
     display: flex;
 }
 
+/* Left content in banner and information section */
+
+.left-content {
+    width: 60%;
+    margin: 2rem 1.5rem;
+}
+
+/* The titles in courses and thesis sections */
+
+.section-title {
+    padding: 2rem 0;
+}
+
 /* Header */
 
 header {
@@ -109,7 +122,6 @@ header .mobile {
 
 .banner-section img {
     width: 60%;
-    height: auto;
     margin: 2rem 1.5rem;
 }
 
@@ -118,8 +130,7 @@ header .mobile {
 }
 
 .banner-section .supporting-content h4 {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    margin: 2rem 0;
 }
 
 .button {
@@ -131,10 +142,15 @@ header .mobile {
     background-color: hsl(5, 10%, 20%);
 }
 
-.button a {
-    font-size: 1.2rem;
+.start-here {
+    font-size: 1.3rem;
     text-decoration: none;
     color: white;
+    background-color: hsl(5, 10%, 20%);
+    padding: 1rem 0;
+    display: inline-block;
+    width: 85%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 938px) and (min-width: 724px) {
@@ -180,18 +196,18 @@ header .mobile {
     display: none; /* Remove the images formatted for mobile screen */
 }
 
-.information-section .left-container {
+.information-section .left-content {
     width: 60%;
     margin: 2rem 1.5rem;
 }
 
-.left-container img {
+.left-content img {
     width: 100%;
     height: auto;
 }
 
 .left-text {
-    margin: 2rem 0;
+    margin-top: 2rem;
 }
 
 .left-text h3 {
@@ -239,7 +255,7 @@ header .mobile {
         display: none;
     }
 
-    .left-container {
+    .left-content {
         display: none;
     }
 
@@ -273,32 +289,22 @@ header .mobile {
     background-color: rgb(240, 240, 240);
 }
 
-.courses-section-desktop h3 {
-    padding-top: 2rem;
-}
-
 .courses-container {
     text-align: center;
-    margin: 2rem 4.5rem;
+    margin: 0rem 4.5rem;
+}
+
+.course-row {
+    display: flex;
+    background-color: rgb(240, 240, 240);
     padding-bottom: 2rem;
-}
-
-.top {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(240, 240, 240);
-    margin: 2rem 0;
-}
-
-.bottom {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(240, 240, 240);
+    margin: 0 -1rem;
 }
 
 .course {
     width: 32%;
     background-color: white;
+    margin: 0 1rem;
 }
 
 .course img {
@@ -310,12 +316,12 @@ header .mobile {
     padding: 1rem;
 }
 
-.course h4 {
-        margin: 1rem 0;
+.course h4 + p {
+    padding: 1rem 0;
 }
 
-.course p {
-    margin: 0.5rem 0;
+.course p + p {
+    margin-bottom: 0.5rem;
 }
 
 @media only screen and (max-width: 780px),
@@ -346,7 +352,7 @@ header .mobile {
 
 .thesis-section .left-container {
     width: 60%;
-    margin: 2rem 1.5rem;
+    margin: 0rem 1.5rem 2rem 1.5rem;
 }
 
 .left-container video {
@@ -356,11 +362,11 @@ header .mobile {
 
 .thesis-section .right-container {
     flex: 1 1 35%;
-    padding: 2rem 0;
+    padding-bottom: 2rem;
 }
 
 .left-text-thesis p {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     max-width: 94%;
 }
 
@@ -394,6 +400,7 @@ header .mobile {
 
 footer {
     padding: 1rem 1.5rem 2rem 1.5rem;
+    border-top: 1px solid rgb(219, 219, 219);
 }
 
 footer p {
