@@ -120,26 +120,12 @@ header .mobile {
     align-items: center;
 }
 
-.banner-section img {
-    width: 60%;
-    margin: 2rem 1.5rem;
-}
-
 .banner-section .supporting-content {
     padding: 0 1.5rem;
 }
 
 .banner-section .supporting-content h4 {
     margin: 2rem 0;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-    height: 50px;
-    background-color: hsl(5, 10%, 20%);
 }
 
 .start-here {
