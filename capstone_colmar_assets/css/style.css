@@ -102,8 +102,7 @@ header .mobile {
     display: none;
 }
 
-@media only screen and (max-width: 780px),
-(max-device-width: 480px) {
+@media only screen and (max-width: 724px) {
     header .desktop {
         display: none;
     }
@@ -124,7 +123,7 @@ header .mobile {
     padding: 0 1.5rem;
 }
 
-.banner-section .supporting-content h4 {
+.supporting-content h4 {
     margin: 2rem 0;
 }
 
@@ -145,14 +144,8 @@ header .mobile {
     }
 }
 
-/*@media only screen and (max-width:724px) and (min-width: 480px) {
-    html {
-        font-size: 8px;
-    }
-}*/
 
-@media only screen and (max-width: 780px),
-(max-device-width: 480px) {
+@media only screen and (max-width: 724px) {
     .banner-section {
         flex-direction: column;
     }
@@ -163,16 +156,25 @@ header .mobile {
     }
 
     .banner-section .supporting-content {
-        margin: 2rem 1rem;
+        padding: 2rem 1rem;
     }
 
-    .banner-section h4 {
+    .banner-section .supporting-content h4 {
         margin-top: 2rem;
         margin-bottom: 1.5rem;
     }
 
     .button {
         width: 100%;
+    }
+
+    .banner-section .left-content {
+        margin: 0;
+    }
+
+    a.start-here {
+        width: 100%;
+        background-color: hsl(0, 0%, 54%);
     }
 }
 
@@ -234,20 +236,25 @@ header .mobile {
     background-color:rgb(206, 206, 206);
 }
 
-@media only screen and (max-width: 780px),
-(max-device-width: 480px) {
+@media only screen and (max-width: 724px) {
 
     .desktop {
         display: none;
     }
 
-    .left-content {
+    .desktop-content {
         display: none;
     }
 
-    .content-mobile {
+    .information-section div.right-container {
+        padding: 1rem 0;
+        border-left: none;
+    }
+
+    .right-container div.content-mobile {
         display: block;
-        margin: 1rem 1rem;
+        padding: 0 1rem;
+        margin-bottom: 0;
     }
 
     .content-mobile .mobile {
@@ -256,8 +263,8 @@ header .mobile {
         height: auto;
     }
 
-    .information-section .right-container {
-        padding-bottom: 0;
+    .information-section div.right-container .middle-content {
+        margin: 3rem 0;
     }
 
     .gray {
@@ -310,8 +317,7 @@ header .mobile {
     margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 780px),
-(max-device-width: 480px) {
+@media only screen and (max-width: 724px) {
 
     .courses-section-desktop {
         display: none;
@@ -319,19 +325,22 @@ header .mobile {
 
     .courses-section-mobile {
         display: block;
+        padding-bottom: 1.5rem;
     }
 
-    .courses-section-mobile h3 {
+    h3.section-title {
+        margin: 0;
+        padding-top: 2rem;
         padding-bottom: 1rem;
+        border-top: 1px solid rgb(201, 201, 201);
     }
 
     .courses-section-mobile h4 {
         background-color: rgb(206, 206, 206);
-        padding-left: 1rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding: 1.5rem 1rem;
         margin: 0.5rem 1rem;
     }
+
 }
 
 /* Thesis section */
@@ -360,8 +369,7 @@ header .mobile {
     margin-top: 1.5rem;
 }
 
-@media only screen and (max-width: 780px),
-(max-device-width: 480px) {
+@media only screen and (max-width: 724px) {
 
     .thesis-section .left-container {
         display: block;
@@ -385,7 +393,7 @@ header .mobile {
 /* Footer section */
 
 footer {
-    padding: 1rem 1.5rem 2rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-top: 1px solid rgb(219, 219, 219);
 }
 
@@ -398,8 +406,12 @@ footer p {
     float: right;
 }
 
-@media only screen and (max-width: 780px),
-(max-device-width: 480px) {
+@media only screen and (max-width: 724px) {
+
+    footer.mobile-footer {
+        border: none;
+    }
+
     .TandP {
         display: none;
     }
