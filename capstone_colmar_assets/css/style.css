@@ -13,10 +13,10 @@ html {
 }
 
 header span {
-    font-size: 28px;
+    font-size: 22px;
 }
 
-header a {
+header .desktop a {
     font-size: 16px;
     text-decoration: none;
     color: black;
@@ -37,6 +37,10 @@ h3 {
     font-size: 2.5rem;
     text-align: center;
     color: hsl(5, 10%, 20%);
+}
+
+header .desktop img {
+    height: 32px;
 }
 
 .left-text h3 + p,
@@ -92,10 +96,7 @@ nav a + a {
 
 .mobile .flex-content {
     justify-content: space-around;
-}
-
-.mobile i {
-    font-size: 32px;
+    height: 32px;
 }
 
 header .mobile {
@@ -109,6 +110,20 @@ header .mobile {
 
     header .mobile {
         display: block;
+    }
+
+    header .mobile a {
+        height: 32px;
+    }
+
+    header .mobile img {
+        height: 38px;
+        padding-top: 4px;
+    }
+
+    header .mobile .main-svg {
+        height: 42px;
+        padding-top: 0;
     }
 }
 
