@@ -31,6 +31,7 @@ h4 {
     font-size: 1.8rem;
     font-weight: normal;
     color: hsl(5, 10%, 20%);
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
 }
 
 h3 {
@@ -73,6 +74,7 @@ header .desktop img {
 
 header {
     padding: 16px 24px;
+    font-family: 'Alegreya Sans', Helvetiva, sans-serif;
 }
 
 header .desktop {
@@ -104,6 +106,11 @@ header .mobile {
 }
 
 @media only screen and (max-width: 724px) {
+
+    html {
+        font-size: 12px;
+    }
+
     header .desktop {
         display: none;
     }
@@ -117,12 +124,12 @@ header .mobile {
     }
 
     header .mobile img {
-        height: 38px;
+        height: 28px;
         padding-top: 4px;
     }
 
     header .mobile .main-svg {
-        height: 42px;
+        height: 32px;
         padding-top: 0;
     }
 }
@@ -151,6 +158,7 @@ header .mobile {
     display: inline-block;
     width: 85%;
     text-align: center;
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
 }
 
 @media only screen and (max-width: 938px) and (min-width: 724px) {
@@ -227,7 +235,7 @@ header .mobile {
 .information-section .right-container {
     flex: 1 1 35%;
     padding: 2rem 0;
-    border-left: 2px solid rgb(139, 138, 138);
+    border-left: 2px solid rgba(206, 206, 206, 0.5);
 }
 .right-container .flex-content {
     padding: 1rem;
@@ -245,6 +253,7 @@ header .mobile {
 
 .text h4 + p {
     margin: 1rem 0;
+    font-family: 'Avenir Next', Helvetica, sans-serif;
 }
 
 .gray {
@@ -326,10 +335,12 @@ header .mobile {
 
 .course h4 + p {
     padding: 1rem 0;
+    font-family: 'Avenir Next', Helvetica, sans-serif;
 }
 
 .course p + p {
     margin-bottom: 0.5rem;
+    font-family: 'Avenir Next', Helvetica, sans-serif;
 }
 
 @media only screen and (max-width: 724px) {
@@ -347,7 +358,7 @@ header .mobile {
         margin: 0;
         padding-top: 2rem;
         padding-bottom: 1rem;
-        border-top: 1px solid rgb(201, 201, 201);
+        border-top: 2px solid rgba(206, 206, 206, 0.5);
     }
 
     .courses-section-mobile h4 {
