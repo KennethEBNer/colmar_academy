@@ -17,9 +17,14 @@ header span {
 }
 
 header .desktop a {
-    font-size: 16px;
-    text-decoration: none;
-    color: black;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+header .desktop a:hover {
+  text-decoration: underline;
+  color: rgb(95, 178, 206);
 }
 
 h2 {
@@ -87,11 +92,6 @@ header .flex-content {
     align-items: center;
 }
 
-.desktop i {
-    margin-right: 8px;
-    font-size: 32px;
-}
-
 nav a + a {
     padding-left: 16px;
 }
@@ -103,6 +103,19 @@ nav a + a {
 
 header .mobile {
     display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  header {
+    padding: 24px 32px;
+  }
+  header span {
+    font-size: 26px;
+  }
+  header .desktop a {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 724px) {
